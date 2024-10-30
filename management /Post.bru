@@ -1,0 +1,31 @@
+meta {
+  name: Post
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/orders
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": "6710e918779b8073ee508de6",
+    "userId": "12345", 
+    "status": "PENDING",
+    "totalAmount": 150.75, 
+    "orderItems": [
+      {
+        "productId": "98765",
+        "quantity": 2
+      },
+      {
+        "productId": "12345",
+        "quantity": 1
+      }
+    ]
+  }
+  
+}
